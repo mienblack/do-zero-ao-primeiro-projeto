@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: #fff;
+    background-color: #4d0a4d;
+}
+
+#intro {
+    color: lightblue;
+}
+
+.content {
+    color: aqua;
+}
+
+img {
+    width: 500px;
+    /*height: 100px;*/
+}

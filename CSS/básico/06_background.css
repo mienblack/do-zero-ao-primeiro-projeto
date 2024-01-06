@@ -1,0 +1,17 @@
+body {
+    background-image: url(./images/background_escuro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+div {
+    background: url(./images/background_claro.jpg) no-repeat fixed center;
+    background-size: cover;
+    height: 100px;
+}
+
+.gradiente {
+    height: 100px;
+    background: linear-gradient(45deg, red, green 50%, blue);
+}

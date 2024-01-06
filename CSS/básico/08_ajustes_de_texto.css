@@ -1,0 +1,40 @@
+.transformacao {
+    text-transform: uppercase;
+}
+
+.decoracao {
+    text-decoration: dashed;
+}
+
+.decoracao-de-link a {
+    color: darkslategrey;
+    text-decoration: none;
+}
+
+.alinhamento {
+    text-align: center;
+}
+
+.justificado {
+    text-align: justify;
+}
+
+.espacamento-letras {
+    letter-spacing: 3px;
+}
+
+.espacamento-palavras {
+    word-spacing: 25px;
+}
+
+.altura {
+    line-height: 2rem;
+}
+
+.identacao {
+    text-indent: 50px;
+}
+
+.sombra {
+    text-shadow: 1px 3px 4px black;
+}
