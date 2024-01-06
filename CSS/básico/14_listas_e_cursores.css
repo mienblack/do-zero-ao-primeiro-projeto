@@ -1,0 +1,25 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul,
+ol {
+    /*list-style-position: inside;*/
+    padding: 20px 40px;
+}
+
+li {
+    background-color: goldenrod;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 5px 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+ol {
+    background-color: aquamarine;
+    list-style-type: lower-alpha;
+}

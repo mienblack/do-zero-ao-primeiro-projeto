@@ -1,0 +1,30 @@
+@font-face {
+    font-family: minha-fonte;
+    src: url(./fonts/RubikMaps-Regular.ttf);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+}
+
+.p2 {
+    font-style: italic;
+}
+
+.p3 {
+    font-weight: bold;
+}
+
+.p4 {
+    font-variant: small-caps;
+}
+
+.p5 {
+    font-family: minha-fonte;
+}

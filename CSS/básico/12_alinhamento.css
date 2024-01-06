@@ -1,0 +1,21 @@
+.card2 {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    margin: auto;
+}
+
+.lorem2 {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+.div-imagem {
+    text-align: center;
+}
