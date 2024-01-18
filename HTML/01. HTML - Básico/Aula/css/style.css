@@ -1,0 +1,37 @@
+body{
+    background-color: rgba(255, 248, 238, 0.871);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#principal {
+    color: rgb(121, 0, 0);
+}
+
+#titulo {
+    color: red;
+}
+
+.txt_verde {
+    color: rgb(0, 84, 0);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+mark {
+    background-color: rgba(128, 128, 128, 0.284);
+    color: rgb(0, 84, 0);
+}
+
+.cor_flor {
+    background-image: url(../css/images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

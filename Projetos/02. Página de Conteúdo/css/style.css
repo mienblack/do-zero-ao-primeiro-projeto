@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#top-bar {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-bottom: 5px solid #fd8a24;
+    padding: 8px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 888px;
+    margin: auto;
+    padding: 30px;
+}
+
+.cabecalho {
+    border-bottom: 1px solid #555;
+}
+
+.titulo {
+    font-size: 56px;
+    line-height: 64px;
+}
+
+.titulo,
+.descricao,
+h2 {
+    color: #111;
+}
+
+.descricao {
+    font-size: 20px;
+}
+
+.autora {
+    font-weight: bold;
+    font-size: 0.8em;
+    color: #555;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+}
+
+.icone-de-rede {
+    width: 20px;
+    padding: 10px 10px 10px 0;
+}
+
+main {
+    max-width: 648px;
+    margin: auto;
+    text-align: justify;
+}
+
+main p,
+.cta {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.cta {
+    margin: 30px 0;
+}
+
+.cta a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fd8a24;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+figure>img {
+    width: 100%;
+}
+
+footer {
+    height: 80px;
+    background-color: #333;
+}

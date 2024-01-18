@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin-left: 35px;
+}
+
+p {
+    color: darkred;
+    text-align: justify;
+    text-indent: 35px;
+}
+
+#second {
+    text-transform: uppercase;
+    line-height: 1.5em;
+    word-spacing: 1.5em;
+    /*text-shadow: 1px 1px 1px #bbb;
+    font-variant: small-caps;*/
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+a {
+    color: black;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.link01 {
+    padding: 5px;
+    border: 3px solid red;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+
+.link01:hover {
+    color: white;
+    background-color: red;
+}
+
+.link02 {    
+    padding: 5px;
+    border: 3px solid red;
+    border-radius: 5px;
+    margin-left: 40px;
+}
+
+.link02:active {
+    color: white;
+    background-color: red;
+}
+
+a:visited {
+    color: red;
+}

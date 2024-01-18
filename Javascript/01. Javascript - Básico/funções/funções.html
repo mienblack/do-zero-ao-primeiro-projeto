@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <script>
+        function media(n1, n2) {
+            var nota1 = n1;
+            var nota2 = n2;
+            var media = (nota1 + nota2)/2;
+
+            return media;
+        }
+
+        var med1 = media(3, 8);
+        var med2 = media(7, 8);
+
+        console.log('Aluno de média ' + med1 + ' e aluno de média ' + med2)
+
+        var M = function(n1, n2) {
+
+            return (n1 + n2)/2;
+        }
+
+        console.log(M(5, 5))
+    </script>
+</body>
+</html>

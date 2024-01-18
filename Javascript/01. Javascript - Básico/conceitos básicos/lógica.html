@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica</title>
+</head>
+<body>
+    <script>
+        // && e
+        // || ou
+        // ! negativo
+
+        var a = true;
+        var b = false;
+        var c = a && b;
+
+        console.log(c)
+
+        var idade = 23;
+        var maior20 = idade >= 20;
+        var menor30 = idade <= 30;
+        var entre = maior20 && menor30;
+
+        console.log('Idade:', idade)
+        console.log('Idade maior que 20', maior20)
+        console.log('Idade menor que 30', menor30)
+        console.log('Idade menor que 30 e maior que 20', entre)
+
+        var idade = 40;
+        var menor10 = idade <= 10;
+        var maior60 = idade >= 60;
+        var gratis = menor10 || maior60;
+
+        console.log('Idade:', idade)
+        console.log('Idade menor que 10', menor10)
+        console.log('Idade maior que 60', maior60)
+        console.log('Consegue ingresso gratuito', gratis)
+
+        var number = 200;
+        var maior100 = number >= 100;
+        var menor100 = !maior100;
+
+        console.log('Número:', number)
+        console.log('Número maior que 100', maior100)
+        console.log('Número menor que 100', menor100)
+
+    </script>
+</body>
+</html>

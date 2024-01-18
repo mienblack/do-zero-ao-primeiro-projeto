@@ -1,0 +1,72 @@
+#cm {
+    background-color: aqua;
+    width: 1cm;
+    height: 1cm;
+}
+
+#mm {
+    background-color: rebeccapurple;
+    width: 1mm;
+    height: 1mm;
+}
+
+#in {
+    background-color: orange;
+    width: 1in;
+    height: 1in;
+}
+
+#px {
+    background-color: forestgreen;
+    width: 10px;
+    height: 10px;
+}
+
+#pt {
+    background-color: hotpink;
+    width: 10pt;
+    height: 10pt;
+}
+
+#pc {
+    background-color: navy;
+    width: 1pc;
+    height: 1pc;
+}
+
+.container {
+    font-size: 25px;
+    width: 300px;
+    background-color: rgb(255, 97, 97);
+}
+
+.inside {
+    font-size: 2em;
+    background-color: rgb(98, 98, 255);
+    width: 2em;
+}
+
+#base {
+    background-color: green;
+    height: 10px;
+}
+
+#container {
+    background-color: blue;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.borda {
+    padding: 2px;
+    border: 2px dashed blue;
+}
+
+.quadrado {
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 5px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+
+    <style>
+        .card {
+            position: relative;
+            float: left;
+            width: 400px;
+            height: 200px;
+            border: 2px solid grey;
+            text-align: center;
+            margin-right: 30px;
+        }
+
+        .c1 {
+            background-color: lightblue;
+            line-height: 200px;
+        }
+
+        .c2 {
+            background-color: lightcoral;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% -50%);
+        }
+
+        #card2 {
+            clear: left;
+            float: left;
+            border: 2px solid grey;
+            padding: 100px 150px 100px 150px;
+            margin-top: 30px ;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="card">
+        <div class="c1">
+            Damien Costa
+        </div>
+    </div>
+    <div class="card">
+        <div class="c2">
+            Damien Costa
+        </div>
+    </div>
+    <div id="card2">
+        Damien Costa
+    </div>
+</body>
+</html>

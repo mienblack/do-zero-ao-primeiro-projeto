@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <script>
+        var nota1 = parseFloat(prompt('Nota 1'));
+        var nota2 = parseFloat(prompt('Nota 2'));
+
+        var media = (nota1 + nota2)/2;
+
+        var conceito = '';
+
+        if (media >= 8) {
+            conceito = 'Ótimo'
+        }
+        else if (media >= 6.5) {
+            conceito = 'Bom'
+        }
+        else {
+            conceito = 'Regular'
+        }
+
+        console.log('Média: ' + media)
+        console.log(conceito)
+
+        switch (conceito) {
+            case 'Ótimo':
+                console.log('Você é um ótimo aluno!')
+                break
+            case 'Bom':
+                console.log('Você está perto de ser ótimo.')
+                break
+            case 'Regular':
+                console.log('Você precisa estudar mais.')
+                break
+            default:
+                console.log('Houve um erro.')
+                break
+        }
+    </script>
+</body>
+</html>

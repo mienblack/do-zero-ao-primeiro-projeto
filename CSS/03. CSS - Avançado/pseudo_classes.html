@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.87);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input {
+            display: block;
+            margin-bottom: 10px;
+            background-color: rgba(0, 0, 0, 0.87);
+            border: 2px solid whitesmoke;
+            color: white;
+            padding: 5px;
+        }
+
+        input:focus {
+            color: darkgrey;
+        }
+
+        li:first-of-type {
+            color: aqua;
+        }
+
+        li:last-of-type {
+            color: aquamarine;
+        }
+
+        ul#list3 > li {
+            list-style: none;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5em;
+        }
+
+        ul#list3 > li:nth-child(odd) {
+            background-color: rgb(78, 78, 78);
+        }
+
+        .list {
+            display: inline-block;
+            margin-right: 100px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <input type="text">
+
+    <ul class="list">
+        <h1>Lista 01</h1>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <ul class="list">
+        <h1>Lista 02</h1>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+    </ul>
+    <ul id="list3">
+        <h1>Lista 03</h1>
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+        <li>Item D</li>
+        <li>Item E</li>
+        <li>Item F</li>
+        <li>Item G</li>
+        <li>Item H</li>
+        <li>Item I</li>
+        <li>Item J</li>
+        <li>Item K</li>
+        <li>Item L</li>
+    </ul>
+</body>
+</html>

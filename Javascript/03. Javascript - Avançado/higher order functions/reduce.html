@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce</title>
+</head>
+<body>
+    <script>
+
+        function novoAluno(nome, idade) {
+            return {nome, idade}
+        }
+
+        let alunos = [
+            novoAluno("Mario", 23),
+            novoAluno("José", 45),
+            novoAluno("Marcia", 29),
+            novoAluno("João", 35)
+        ]
+
+        function idadeDaTurma(total, aluno) {
+            return total + aluno.idade
+        }
+
+        console.log(alunos)
+        console.log(alunos.reduce(idadeDaTurma, 0))
+    </script>
+</body>
+</html>

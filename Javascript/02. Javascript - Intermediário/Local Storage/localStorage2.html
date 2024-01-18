@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage 2</title>
+
+    <script>
+        let a = {
+            nome: 'Falcon',
+            média: 3.3
+        }
+        localStorage.setItem("aluno", JSON.stringify(a))
+
+        let aluno = localStorage.getItem("aluno");
+        console.log(JSON.parse(aluno));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

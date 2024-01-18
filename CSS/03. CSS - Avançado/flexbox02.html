@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box 02</title>
+
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.87);
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: spa;
+            background-color: gray;
+            height: 500px;
+        }
+        .r1 {
+            order: 3;
+            flex-grow: 2;
+            background-color: darkblue;
+        }
+        .r2 {
+            flex-grow: 1;
+            order: 1;
+            background-color: darkgreen;
+        }
+        .r3 {
+            order: 2;
+            flex-grow: 4;
+            align-self: flex-end;
+            background-color: darkred;
+        }
+
+        .rect {
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="rect r1">1</div>
+        <div class="rect r2">2</div>
+        <div class="rect r3">3</div>
+    </div>
+</body>
+</html>

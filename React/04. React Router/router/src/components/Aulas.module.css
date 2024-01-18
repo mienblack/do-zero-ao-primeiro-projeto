@@ -1,0 +1,12 @@
+.classes ul {
+    list-style-type: none;
+}
+
+.classes a {
+    color: white;
+    text-decoration: none;
+}
+
+.classes a:hover {
+    color: lightgray;
+}

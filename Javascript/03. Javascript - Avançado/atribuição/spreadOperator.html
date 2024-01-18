@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+</head>
+<body>
+    <script>
+
+        let pessoa = {
+            nome: "José Silva",
+            idade: 41
+        }
+
+        let contato = {
+            telefone: 20203090,
+            email: "jose.s@mail.com"
+        }
+
+        let copia = {...pessoa, ...contato}
+        copia.idade = 34
+
+        console.log(pessoa)
+        console.log(copia)
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desestruturação de un Objeto</title>
+</head>
+<body>
+    <script>
+
+        let aluno1 = {
+            matricula: 1234,
+            nome: "Danilo",
+            idade: 19,
+            cidade: "Santos"
+        }
+
+        let aluno2 = {
+            matricula: 1235,
+            nome: "João",
+            idade: 20,
+            cidade: "Santos"
+        }
+
+        let aluno3 = {
+            matricula: 1236,
+            nome: "Micaela",
+            idade: 19,
+            cidade: "Santos"
+        }
+
+        let alunos = [aluno1, aluno2, aluno3]
+
+        let [danilo, ...outros] = alunos
+
+        console.log(danilo)
+        console.log(outros)
+    </script>
+</body>
+</html>

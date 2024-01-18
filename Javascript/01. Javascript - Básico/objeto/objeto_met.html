@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método do Objeto</title>
+</head>
+
+<body>
+    <script>
+        var calcmedia = function () {
+
+            return (this.notas[0] + this.notas[1]) / 2
+        }
+
+        var aluno_01 = {
+
+            nome: 'José',
+            notas: [6.6, 9.0],
+            media: calcmedia
+        }
+
+        var aluno_02 = {
+
+            nome: 'David',
+            notas: [8.0, 6.0],
+            media: calcmedia
+        }
+
+        console.log(aluno_01.nome)
+        console.log(aluno_01.media())
+
+        console.log(aluno_02.nome)
+        console.log(aluno_02.media())
+    </script>
+</body>
+
+</html>

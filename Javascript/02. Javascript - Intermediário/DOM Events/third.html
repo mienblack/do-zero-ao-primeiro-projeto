@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 3</title>
+
+    <script>
+        function loaded () {
+
+            let h1 = document.getElementsByTagName('h1')[0];
+            h1.onclick = changeText;
+
+            let h1_2 = document.getElementsByTagName('h1')[1];
+            h1_2.addEventListener('mouseover', mouseOver)
+            h1_2.addEventListener('mouseout', mouseOut)
+        }
+
+        function changeText () {
+
+            this.innerHTML = 'Mudei'
+        }
+
+        function mouseOver () {
+
+            this.innerHTML = 'Change';
+        }
+
+        function mouseOut () {
+
+            this.innerHTML = 'Voltei'
+        }
+    </script>
+</head>
+<body onload="loaded()">
+    <h1>Título</h1>
+
+    <h1>Segundo título</h1>
+</body>
+</html>

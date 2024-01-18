@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+
+    <script>
+
+        function changeH1 (input) {
+
+            let h1 = document.getElementsByTagName('h1')[0]
+            h1.innerText = input.value;
+        }
+
+        function hideH1 () {
+
+            let main = document.getElementById('main');
+            main.style.display = 'none';
+        }
+    </script>
+
+    <style>
+
+        div#button {
+            display: inline-block;
+            background-color: darkcyan;
+            font-size: 3em;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1 id="tit" onclick="this.style.color = 'red'">Clique aqui</h1>
+        <input type="text" id="texto" placeholder="Digite o título" oninput="changeH1(this)">
+    </div>
+
+    <div id="button" onclick="hideH1()">
+        Button
+    </div>
+
+</body>
+</html>

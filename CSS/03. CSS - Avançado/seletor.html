@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(0, 0, 0, 0.87);
+            color: white;
+        }
+
+        div p {
+            background-color: darkblue;
+        }
+
+        div > p {
+            color: purple;
+        }
+
+        div + p {
+            color: royalblue;
+        }
+
+        header ~ p {
+            text-decoration: underline;
+        }
+
+        [width] {
+            color: cyan;
+        }
+
+        [title^="t"] {
+            text-align: center;
+        }
+
+        [title~="head"] {
+            text-align: right;
+        }
+
+        [title$="1"] {
+            text-decoration: underline;
+        }
+
+        [title*="e"] {
+            color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 title="head 1">Título 01</h1>
+        <h2 title="title2">Título 02</h2>
+        <h3 title="title3">Título 03</h3>
+        <h4>Título 04</h4>
+        <h5 title="head 5">Título 05</h5>
+        <h6>Título 06</h6>
+    </header>
+
+    <div>
+        <p title="p1">Paragráfo 01</p>
+        <p>Paragráfo 02</p>
+        <section>
+            <p>Parágrafo 03</p>
+            <p>Parágrafo 04</p>
+        </section>
+    </div>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum cupiditate, ea eius vero mollitia veniam recusandae tenetur velit accusantium qui laudantium in, veritatis nam fugit obcaecati unde ullam minus necessitatibus.</p>
+    <p  width="400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reiciendis, nobis obcaecati quasi cupiditate dolorum omnis accusamus unde repudiandae necessitatibus excepturi itaque! Optio totam culpa exercitationem debitis architecto, error placeat.</p>
+
+    <footer>
+        <p width="300">Parágrafo 01</p>
+        <p>Parágrafo 02</p>
+        <p>Parágrafo 03</p>
+    </footer>
+
+    <script>
+        let title = document.querySelectorAll("[title]")
+
+        console.log(title)
+    </script>
+</body>
+</html>

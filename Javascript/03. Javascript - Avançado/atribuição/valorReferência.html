@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor e Referência</title>
+</head>
+<body>
+    <script>
+
+        let turmaA = ["Paulo", "Milton", "Joana"]
+
+        //let turmaB = turmaA.slice()
+        let turmaB = [...turmaA]
+
+        turmaB.push("Mariane")
+
+        console.log(turmaA)
+        console.log(turmaB)
+
+        let alunoA = {
+            nome: "Felipe",
+            idade: 20
+        }
+
+        //let alunoB = Object.assign({}, alunoA)
+        let alunoB = {...alunoA}
+        alunoB.nome = "Fernanda"
+
+        console.log(alunoA)
+        console.log(alunoB)
+    </script>
+</body>
+</html>

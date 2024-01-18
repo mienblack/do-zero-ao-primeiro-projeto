@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+
+    <script>
+        function mudarCor() {
+            let title = document.getElementsByTagName('h1')[0];
+            title.style.color = 'lightblue';
+        }
+
+        function mudarTexto() {
+            let title = document.getElementsByTagName('h1')[0];
+            title.innerHTML = 'Novo Título';
+
+            setTimeout(mudarCor, 1000)
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(0, 0, 0, 0.94);
+        }
+
+        .position {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%)
+        }
+
+        input {
+            padding: 10px;
+            font-size: 1.2rem;
+            top: 5%;
+        }
+
+        h1 {
+            color: white;
+            top: 15%;
+        }
+    </style>
+</head>
+
+<body>
+    <input class="position" onclick="mudarTexto()" type="submit" value="Mudar">
+    <h1 class="position">Título</h1>
+</body>
+
+</html>

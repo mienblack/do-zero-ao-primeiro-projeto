@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas condicionais</title>
+</head>
+<body>
+    <script>
+        var idade = parseInt(prompt('Qual é a  sua idade?'))
+        
+        if (idade >= 30){
+            alert('Pode comprar.\nQual é o seu pedido?')
+        }
+        else if (idade >= 18){
+            alert('Pode comprar.\nMostre a identidade.')
+
+        }
+        else {
+            alert('Não pode comprar!\nVolte futuramente.')
+        }
+
+        var idade2 = parseInt(prompt('Qual é a sua idade?'))
+        idade2 >= 18 ? console.log('Pode comprar!') : console.log('Não  pode comprar!')
+    </script>
+</body>
+</html>

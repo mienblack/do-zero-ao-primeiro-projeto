@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intervalo</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(0, 0, 0, 0.94);
+        }
+
+        div {
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        input {
+            padding: 10px;
+            font-size: 1.2rem;
+        }
+
+        h1 {
+            position: absolute;
+            color: white;
+            top: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+
+    <script>
+        var number = 0;
+
+        var interval;
+
+        function atualizarTexto () {
+
+            let title = document.getElementsByTagName('h1')[0];
+            title.innerHTML += " " + number; 
+            number++;
+        }
+
+        function iniciar () {
+            interval = setInterval(atualizarTexto, 1000)
+        }
+
+        function pausar () {
+            clearInterval(interval)
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <input onclick="iniciar()" type="submit" value="Iniciar">
+        <input onclick="pausar()" type="submit" value="Pausar">
+    </div>
+    <h1>Intervalo</h1>
+</body>
+</html>
