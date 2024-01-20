@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    font-size: 14px;
+}
+
+body {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+    font-family: Sora, Arial, Helvetica, sans-serif;
+}
+
+
+.gradiente {
+    background: linear-gradient(to right, #5579ba, #41a377);
+}
+
+.container {
+    max-width: 540px;
+    height: 100%;
+    color: white;
+    margin: auto;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foto-de-perfil {
+    width: 120px;
+}
+
+.nome-de-usuario {
+    font-weight: 500;
+    font-size: 2em;
+    margin: 16px 0;
+}
+
+.descricao {
+    font-size: 1em;
+    color: #919193;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin: 2em 0;
+}
+
+li {
+    font-size: 1.2em;
+    height: 4em;
+    border-radius: 2em;
+    display: flex;
+}
+
+.social-link {
+    padding: 0 45px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-link>img {
+    width: 1.32em;
+}
+
+footer {
+    display: flex;
+    gap: 1.6em;
+}
+
+.contato {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
