@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Selecionar Elementos Filhos</title>
+</head>
+
+<body>
+    <h1>Minha Lista 01</h1>
+    <ul id="lista01">
+        <li class="item01">Item 01</li>
+        <li class="item02">Item 02</li>
+        <li class="item03">Item 03</li>
+        <li class="item04">Item 04</li>
+        <li class="item05">Item 05</li>
+    </ul>
+
+    <script>
+        let lista01 = $("#lista01")
+        lista01.find(".item03").hide().show().slideUp(2000).slideDown(2000) // Encadeamento de eventos ddo item 03 da lista 01
+    </script>
+</body>
+
+</html>

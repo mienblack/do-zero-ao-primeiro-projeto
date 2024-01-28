@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaçãoes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            text-align: center;
+            margin: auto;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(111, 111, 245);
+            font-weight: 700;
+        }
+
+        .block {
+            margin-top: 30px;
+            background-color: orange;
+            height: 250px;
+            width: 250px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="fadein">Fade in</button>
+    <button class="fadeout">Fade out</button>
+    <button class="fadetoggle">Fade toggle</button>
+    <button class="slidedown">Slide Down</button>
+    <button class="stop">Stop</button>
+    <div class="block"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(".fadein").click(() => {
+            $(".block").fadeIn(1000)
+        })
+        $(".fadeout").click(() => {
+            $(".block").fadeOut(1000)
+        })
+        $(".fadetoggle").click(() => {
+            $(".block").fadeToggle(1000)
+        })
+        $(".slidedown").click(() => {
+            $(".block").slideDown(1000)
+        })
+        $(".stop").click(() => {
+            $(".block").stop(1000)
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Ver conteúdo de um elemento</title>
+</head>
+
+<body>
+    <h1>Minha Lista 01</h1>
+    <input type="text" id="novo" name="novo" value="Novo Item">
+    <ul id="lista01">
+        <li class="item01">Item 01</li>
+        <li class="item02">Item 02</li>
+        <li class="item03">Item 03</li>
+        <li class="item04">Item 04</li>
+        <li class="item05">Item 05</li>
+    </ul>
+
+    <script>
+        console.log($("#lista01").text())
+        console.log($("#lista01").html())
+        console.log($("#novo").val())
+        console.log($("#novo").attr("name"))
+    </script>
+</body>
+
+</html>
