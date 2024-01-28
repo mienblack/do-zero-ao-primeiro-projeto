@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <title>Ver conteúdo de um elemento</title>
+    <title>Elementos Irmãos</title>
 </head>
 
 <body>
@@ -20,18 +20,12 @@
     </ul>
 
     <script>
-        // $("#lista01").html("<li>Item Novo 01</li>")
-        $("li").attr("name", (i) => {
-            return "valor" + i
-        })
-        $("input").attr("maxlength", 5).attr("type", "password")
+        console.log($("[key=3]").nextAll())
+        console.log($("[key=3]").prevAll())
+        console.log($("[key=3]").next())
+        console.log($("[key=3]").prev())
+        console.log($("[key=3]").siblings())
 
-        // Encontrar elemento por um atributo
-        $("[key=1]").remove()
-        $("li").remove("[key=2], [key=4]")
-
-        let lista1 = $("#lista01")
-        lista1.append("<li>Novo Item</li>").prepend("<li>Primeiro Item</li>").after("<p>Item inserido após a lista com a lista commo referência</li>").before("<p>Item inserido antes da lista com a lista como referência</p>")
     </script>
 </body>
 

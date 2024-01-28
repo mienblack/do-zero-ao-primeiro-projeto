@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Alterar o estilo</title>
+    <style>
+        .bg-color {
+            background-color: black;
+            color: white;
+        }
+
+        h1,
+        h2 {
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Título</h1>
+    <h2>Subtitulo</h2>
+
+    <script>
+        setInterval(() => {
+            // $("h1").addClass("bg-color")
+            // $("h1").remove("bg-color")
+            $("h1").toggleClass("bg-color")
+        }, 500)
+
+        setTimeout(() => {
+            $("h2").css({ "background-color": "green" })
+        }, 2000)
+    </script>
+</body>
+
+</html>

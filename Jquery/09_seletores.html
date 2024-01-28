@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Seletores especiaais</title>
+    <style>
+        .div1 {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container01">
+        <div class="div1" id="div01">div 01</div>
+        <div class="div2" id="div02">div 02</div>
+        <div class="div1" id="div03">div 03</div>
+        <div class="div2" id="div04">div 04</div>
+        <div class="div1" id="div05">div 05</div>
+    </div>
+    <div id="container02">
+        <div class="div2" id="div06">div 06</div>
+        <div class="div1" id="div07">div 07</div>
+        <div class="div2" id="div08">div 08</div>
+        <div class="div1" id="div09">div 09</div>
+        <div class="div2" id="div10">div 10</div>
+    </div>
+
+    <script>
+        console.log($("#container02").children().first())
+        console.log($("#container02").children().last())
+        console.log($("#container02").children().filter("#div02"))
+        console.log($("#container02").children().not("#div06"))
+        console.log($("#container02").children().eq(3))
+
+
+    </script>
+</body>
+
+</html>

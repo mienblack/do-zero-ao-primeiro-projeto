@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Alterar o estilo</title>
+    <style>
+        .box,
+        .box2 {
+            width: 500px;
+            border: 5px solid black;
+            padding: 30px;
+            margin: 30px;
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .box2 {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+
+
+    <script>
+        let box = $(".box")
+        box.append("Largura: ", box.width(), "<br>",
+            "Largura + Padding: ", box.innerWidth(), "<br>",
+            "Largura + Padding + Borda: ", box.outerWidth(), "<br>",
+            "Largura + Padding + Borda + Margem: ", box.outerWidth(true))
+
+        let box2 = $(".box2")
+        box2.append("Largura: ", box2.width(), "<br>",
+            "Largura + Padding: ", box2.innerWidth(), "<br>",
+            "Largura + Padding + Borda: ", box2.outerWidth(), "<br>",
+            "Largura + Padding + Borda + Margem: ", box2.outerWidth(true))
+    </script>
+</body>
+
+</html>
