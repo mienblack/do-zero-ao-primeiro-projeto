@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./global.css">
+</head>
+
+<body class="h-100">
+    <div class="container d-flex flex-column justify-content-between h-100">
+        <nav class="navbar justify-content-end">
+            <a class="btn btn-close p-2 border border-dark" href="./index.html"></a>
+        </nav>
+        <div
+            class="d-flex flex-column bg-dark text-light flex-fill align-items-center justify-content-center rounded-2 mb-3">
+            <span id="speed" class="fw-bold" style="font-size:120px">0</span>
+            <span style="font-size: 36px;">Km/h</span>
+        </div>
+        <button class="btn btn-primary mb-3" id="start">
+            <span class="display-2">Iniciar</span>
+        </button>
+        <button class="btn btn-danger d-none mb-3" id="stop">
+            <span class="display-2">Parar</span>
+        </button>
+    </div>
+
+    <script src="./storage.js"></script>
+    <script src="./velocimetro.js"></script>
+</body>
+
+</html>
