@@ -25,7 +25,7 @@ const TURMA = "turmaA"
 db.collection(TURMA).get().then((snapshot) => {
     snapshot.forEach((doc) => {
         let aluno = doc.data()
-            console.log(aluno.nome)
+        console.log(aluno.nome)
     })
 })
 
@@ -36,6 +36,7 @@ docRef.get().then((doc) => {
     console.log(aluno.nome)
 })
 
+// Seleciona dados a partir de seletor como nome, notas, etc, podendo usar ==, >, <, >=, <=
 db.collection(TURMA).where("nome", "==", "Felipe").get().then((snapshot) => {
     snapshot.forEach((doc) => {
         let aluno = doc.data()
@@ -43,6 +44,7 @@ db.collection(TURMA).where("nome", "==", "Felipe").get().then((snapshot) => {
     })
 })
 
+// Adiciona um documento em uma lista
 /* db.collection(TURMA).add({
     nome: "Luiz",
     sobrenome: "Dero",
@@ -53,30 +55,33 @@ db.collection(TURMA).where("nome", "==", "Felipe").get().then((snapshot) => {
     console.log(err)
 }) */
 
+// Posso adicionar ou atualizar um documento com set
 db.collection(TURMA).doc("RHF9UkogmZUUeMsVzEWD").set({
     nome: "Giuliana",
     sobrenome: "Fabv",
-    notas: {nota1: 5, nota2: 9}
+    notas: { nota1: 5, nota2: 9 }
 }).then(() => {
     console.log("Documento inserido com sucesso: ")
 }).catch((err) => {
     console.log(err)
 })
 
+// Atualiza um documento a partir de um ID
 db.collection(TURMA).doc("YBo7djspkDLfYyXpCcAh").update({
     nome: "Christopher",
     sobrenome: "Julian",
-    notas: {nota1: 2, nota2: 9}
+    notas: { nota1: 2, nota2: 9 }
 }).then(() => {
     console.log("Documento atualizado com sucesso: ")
 }).catch((err) => {
     console.log(err)
 })
 
+// Atualiza adicionando um novo campo
 db.collection(TURMA).doc("ZfHcVBFzYhTjsleA9tqq").set({
     nome: "Vagner",
     sobrenome: "Smith",
-    notas: {nota1: 2, nota2: 0},
+    notas: { nota1: 2, nota2: 0 },
     cidades: ["Belo Horizonte"]
 }).then(() => {
     console.log("Documento inserido com sucesso: ")
@@ -84,14 +89,16 @@ db.collection(TURMA).doc("ZfHcVBFzYhTjsleA9tqq").set({
     console.log(err)
 })
 
+// Atualiza o dado de um array
 db.collection(TURMA).doc("ZfHcVBFzYhTjsleA9tqq").update({
-    cidades: firebase.firestore.FieldValue.arrayUnion("Cotia"), 
+    cidades: firebase.firestore.FieldValue.arrayUnion("Cotia"),
 }).then(() => {
     console.log("Documento atualizado com sucesso: ")
 }).catch((err) => {
     console.log(err)
 })
 
+// Seleciona os dados em tempo real
 docRef.onSnapshot((doc) => {
     let aluno = doc.data()
     console.log(aluno)

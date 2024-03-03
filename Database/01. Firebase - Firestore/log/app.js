@@ -20,16 +20,19 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth()
 
-/*
-let newUserEmail = "novoteste@teste.com"
-let newUserPassword = "123098a"
+// criarUsuario("novoteste@teste.com", "123098a")
 
-auth.createUserWithEmailAndPassword(newUserEmail, newUserPassword).then((user) => {
-    console.log(user)
-}).catch((error) => {
-    console.log(error)
-})
-*/
+// Cria um novo usuário
+function criarUsuario(user, password) {
+    let newUserEmail = user
+    let newUserPassword = password
+
+    auth.createUserWithEmailAndPassword(newUserEmail, newUserPassword).then((user) => {
+        console.log(user)
+    }).catch((error) => {
+        console.log(error)
+    })
+}
 
 auth.onAuthStateChanged((user) => {
     if (user) {
@@ -39,10 +42,12 @@ auth.onAuthStateChanged((user) => {
     }
 })
 
-function login() {
-    let userEmail = "novoteste@teste.com"
-    let userPassword = "123098a"
+// Faz login a partir de usuario e senha
+function login(user, password) {
+    let userEmail = user
+    let userPassword = password
 
+    // Cria uma persistencia dos dados com LOCAL, SESSION ou NONE
     auth.setPersistence(firebase.auth.Auth.Persistence.SESSION).then(() => {
         auth.signInWithEmailAndPassword(userEmail, userPassword).then(() => {
             console.log(auth.currentUser)
@@ -54,6 +59,7 @@ function login() {
     })
 }
 
+// Desloga o usuário
 function logout() {
     auth.signOut().then(() => {
         console.log("O usuário foi deslogado")
@@ -62,5 +68,5 @@ function logout() {
     })
 }
 
-logout()
-//setTimeout(login, 3000)
+//setTimeout(login("novoteste@teste.com", "123098a"), 3000)
+setTimeout(logout, 3000)
