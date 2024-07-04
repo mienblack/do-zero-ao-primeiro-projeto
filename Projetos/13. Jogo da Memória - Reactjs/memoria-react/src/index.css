@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Righteous, Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #c7cdd3;
+}
+
+#game-board {
+    max-width: 700px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr/1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    width: 20vh;
+    height: 20vh;
+
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+
+.card_front,
+.card_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+    backface-visibility: hidden;
+}
+
+.card_front {
+    background-color: #101c2c;
+    transform: rotateY(180deg);
+}
+
+.card_back {
+    color: #101c2c;
+    background-color: #05c3ff;
+    font-size: 30px;
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+#game-over {
+    display: flex;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#restart {
+    font-family: Righteous, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 15px 20px;
+    background-color: #fde233;
+    border: none;
+    border-radius: 10px;
+}
